@@ -1,0 +1,32 @@
+MDC:
+	Multiple Decompression and Compression using itterative techniques
+
+Project Description:
+	The project MDC is an application which generate a key and compress file by co * mpressing a text file. The key file is used to get decompress file from compress file.
+
+How to use:
+	* Write content in the file "inputfile" present in current directory (or) rename the text file
+	  that you want to compress to the name "inputfile".
+	* To generate  compression file and keyfile:
+	----
+	$ make compress
+	----
+
+	* To send file to reciever side( For eg: rectest is reveiver side)
+	----
+	$ make send
+	----
+
+	* To decompress file in receiver side
+	----
+	$ cd rectest/
+	$ make decompress
+	----
+
+	* To get original file from compress file using key file
+	----
+	$ make getfile
+	----
+	
+	* Open decomfile and check the original content
+
